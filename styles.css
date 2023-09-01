@@ -1,0 +1,245 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *:after{
+    box-sizing: inherit;
+    font-family: 'Playfair Display', serif;
+}
+
+/* globales*/
+body{
+    background-color: rgb(160, 85, 204);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: auto;
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 2.4rem;
+    text-align: center;
+    color: rgb(242, 242, 8);
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(130, 85, 221);
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.header__logo {
+    margin: 2.1rem 0;
+}
+
+.navegacion{
+    background-color: rgb(130, 85, 221);
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion__enlace{
+    margin: 0 2.1rem;
+    padding: 1rem;
+}
+
+.navegacion__enlace:hover{
+    background: linear-gradient(to top, transparent, #727);
+    color: rgb(242, 242, 8);
+}
+
+.navegacion a{
+    color: #fff;
+}
+
+.navegacion__enlace--activo:active{
+    color: #000;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid: dense;
+}
+
+@media (min-width: 780px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.producto{
+    background-color: rgb(130, 85, 221);
+    padding: 1rem;
+
+}
+
+.producto__nombre{
+    font-size: 3.5rem;
+
+}
+
+.producto__precio{
+    font-size: 2.6rem;
+}
+.producto__nombre,
+.producto__precio{
+    text-align: center;
+    color: rgb(242, 242, 8);
+    margin: 1rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+
+.producto__nombre:hover{
+    color: #000;
+}
+
+.grafico{
+    background-color: #fff;
+    grid-column: 1/3;
+    height: 100%;
+    
+}
+
+.grafico:nth-child(16){
+    grid-row: 2/3;
+    
+}
+
+.grafico:nth-child(15){
+    grid-row: 4/5;
+}
+
+@media (min-width: 768px) {
+    
+    .grafico:nth-child(16){
+          grid-column: 1/3;
+          grid-row: 2/3;
+          background-size: cover;
+}
+
+    .grafico:nth-child(15){
+          grid-column: 2/4;
+          grid-row: 4/5;
+          width: 100%;
+}
+}
+
+.nosotros__contenido{
+    display: grid;
+    column-gap: 2;
+}
+
+.nosotros__img{
+    order: 1;
+}
+
+.nosotros__parrafo{
+    order: 2;  
+}
+
+@media (min-width: 780px) {
+    .nosotros__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+    .nosotros__img{
+    order: 2;
+}
+    .nosotros__parrafo{
+    order: 1;  
+}
+}
+
+@media (min-width: 780px) {
+    .bloques{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }    
+}
+
+.bloques{
+    text-align: center;
+}
+
+
+@media (min-width: 780px) {
+    .camisa__img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.formulario__submit{
+    background-color: rgb(242, 242, 8);
+    border: none;
+    font-size: 2rem;
+    font-size: 'Playfair Display', serif;
+    padding: .8rem;  
+    grid-column: 1/3;
+}
+
+.formulario__campo{
+    border: .8rem solid rgb(130, 85, 221);
+    background: transparent;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: .8rem;
+    outline: none;
+    appearance: none;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, rgb(139, 136, 38) , rgb(238, 235, 77));
+}
+

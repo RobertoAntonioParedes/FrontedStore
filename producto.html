@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Fronted Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="Index.html">
+            <img class="header__logo" src="/img/img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="Index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="Nosotros.html">Nosotros</a>
+    </nav>
+    <main>
+        <h1>Camisa React JS</h1>
+        <div class="contenedor__producto">
+            <div class="camisa__img">
+                <img src="/img/img/3.jpg" alt="imagen3">
+                <div class="camisa__contenido">
+                    <p>La camisas React JS, esta fabricada de material poliester, diseñada para la comodidad del usuario, es ligera, ideal para los dias calurosos</p>
+                    <form class="formulario">
+                        <select class="formulario__campo">
+                            <option disabled selected>--Seleccionar talla--</option>
+                            <option>Pequeña (S)</option>
+                            <option>Mediana (L)</option>
+                            <option>Grande (XL)</option>
+                        </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1"></input>
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito"></input>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">Front End Store-Todos los derechos reservados</footer>
+    
+
+</body>
+</html>
